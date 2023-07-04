@@ -15,4 +15,4 @@ If you would like to run this code, you will need to:
 ### License
 [License](LICENSE)
 
-<img src="PacMan1.png">
+<img src="./images/PacMan1.png">
