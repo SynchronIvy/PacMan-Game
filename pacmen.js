@@ -6,6 +6,9 @@ const pacArray = [
 var direction = 0;
 const pacMen = [];
 
+let newimg = ;
+let newimg.src = ;
+
 function setToRandom(scale) {
   return {
     x: Math.random() * scale,
@@ -19,9 +22,9 @@ function makePac() {
   let position = setToRandom(200);
   // Add image to div id = game
   let game = document.getElementById('game');
-  let newimg = document.createElement('img');
+  newimg = document.createElement('img');
   newimg.style.position = 'absolute';
-  newimg.src = './images/PacMan1.png';
+  newimg.src = pacArray[0[1]];
   newimg.width = 100;
   newimg.style.left = position.x;
   newimg.style.top = position.y;
@@ -52,7 +55,8 @@ function checkCollisions(item) {
     item.position.x + item.velocity.x + item.newimg.width > window.innerWidth ||
     item.position.x + item.velocity.x < 0
   )
-    item.velocity.x = -item.velocity.x;
+  newimg.src = pacArray[1[0]];
+  item.velocity.x = -item.velocity.x;
   if (
     item.position.y + item.velocity.y + item.newimg.height > window.innerHeight ||
     item.position.y + item.velocity.y < 0
